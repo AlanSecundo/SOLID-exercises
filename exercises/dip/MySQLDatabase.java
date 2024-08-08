@@ -1,4 +1,4 @@
-public class MySQLDatabase {
+public class MySQLDatabase implements Database {
     public void connect() {
         // Lógica de conexão com MySQL
         System.out.println("Connected to MySQL");

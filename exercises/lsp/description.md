@@ -16,6 +16,21 @@ public void resizeRectangle(Rectangle rect) {
     rect.setHeight(5);
     assert rect.getArea() == 50; // Supondo que isso seja um comportamento esperado
 }
+
+public void calculateAreaRectangle(Shape rect) {
+    assert rect.getArea() == 50;
+}
 ```
+
+Square = new Square();
+square.setSide(20);
+
+calculateArea(square)
+
+Square = new Rectangle();
+square.setWidth(20);
+square.setHeight(10);
+
+calculateArea(square)
 
 Com um Square, setWidth ou setHeight alteram ambos os valores, causando uma área diferente de 50, o que viola a expectativa de uso do método resizeRectangle.
